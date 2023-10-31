@@ -10,4 +10,5 @@
 
 ### Датасет
 Используется датасет movielens https://files.grouplens.org/datasets/movielens/ml-latest-README.html
+
 [Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1cOOnSeXrYxYDrmAySUNxFiFlOMzczJD2/view?usp=sharing)
