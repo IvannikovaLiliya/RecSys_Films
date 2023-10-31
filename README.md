@@ -7,3 +7,7 @@
 
 ### Структура данных
 [Ссылка на google-таблицу](https://docs.google.com/spreadsheets/d/1feZpmxxlIWfJ4-VrLrBzTngBFMFNwXb2b1ocfvsFezI/edit?usp=sharing)
+
+### Датасет
+Используется датасет movielens https://files.grouplens.org/datasets/movielens/ml-latest-README.html
+[Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1cOOnSeXrYxYDrmAySUNxFiFlOMzczJD2/view?usp=sharing)
