@@ -1,7 +1,7 @@
 # RecSys_Films
 Репозиторий проекта рекомендательных систем по фильмам
 
-### План проекта
+### План проекта (в процессе доработки)
 [Ссылка на google-документ](https://docs.google.com/document/d/1ErzQ7lf4dIpijgG4vmwcGSvy3dYz9V8db09wqW16Frw/edit?usp=sharing)
 
 
