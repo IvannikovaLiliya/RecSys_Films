@@ -18,4 +18,4 @@ EDA - папка с EDA анализом
 
 Дополнительно используется датасет imdb https://files.grouplens.org/datasets/movielens/ml-latest-README.html
 
-[Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1cOOnSeXrYxYDrmAySUNxFiFlOMzczJD2/view?usp=sharing)
+[Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1JSpzTZKUJVA3HwO7b1E80ld6dPwUoNB3/view?usp=sharing)
