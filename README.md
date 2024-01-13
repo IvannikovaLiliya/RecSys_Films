@@ -19,3 +19,7 @@ EDA - папка с EDA анализом
 Дополнительно используется датасет imdb https://developer.imdb.com/non-commercial-datasets/
 
 [Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1JSpzTZKUJVA3HwO7b1E80ld6dPwUoNB3/view?usp=sharing)
+
+Данные для модели, построенной на базе библиотеки LightFm
+
+[Ссылка на google-диск с файлами по модели](https://drive.google.com/drive/folders/1hIhQTeSNQ3oCJTboDrya0sFCFuPmKKmq?usp=sharing)
