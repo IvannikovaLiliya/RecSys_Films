@@ -55,9 +55,8 @@ moveis_fin = pd.read_csv('IMDb.csv', sep='\t', index_col=0)
 with open("movies_to_predict", "rb") as fp:  # Unpickling
     movies_to_predict = pickle.load(fp)
 
-ClassRecSyc = pickle.load(open('lfm_model_pred.pkl', 'rb'))
-model_ = ClassRecSyc.model
-lfm = LightFMRecSyc(model=model_, RecSycFilms=RecSycFilms,
+ClassRecSyc = pickle.load(open('model_pred.pkl', 'rb'))
+lfm = LightFMRecSyc(model=ClassRecSyc, RecSycFilms=RecSycFilms,
                     IMDb_df=moveis_fin, Genre=None)
 
 lfm.recommend(user_id = [274724], k = 5, movies_to_predict = movies_to_predict)
