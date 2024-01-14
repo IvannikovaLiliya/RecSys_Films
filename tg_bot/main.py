@@ -285,7 +285,6 @@ async def predict_film(message: Message,state: FSMContext):
 
 
 # вариант для локального запуска
-'''
 async def main():
     bot = Bot(token=TOKEN, parse_mode=ParseMode.HTML)
     dp = Dispatcher()
@@ -297,9 +296,10 @@ async def main():
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
-'''
+
 
 # вариант с вебхуком для хостинга
+'''
 BASE_WEBHOOK_URL = ''
 WEBHOOK_HOST = 'https://pvv-bot-aiogram.onrender.com'
 WEBHOOK_PATH = f'/webhook/{TOKEN}'
@@ -328,4 +328,5 @@ def main() -> None:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
+'''
 
