@@ -1,12 +1,10 @@
 import pandas as pd
-import numpy as np
-from lightfm import LightFM
-
 import pickle
+
 
 class LightFMRecSyc():
 
-    def __init__(self, model=None, RecSycFilms = None, IMDb_df=None, Genre = None):
+    def __init__(self, model=None, RecSycFilms=None, IMDb_df=None, Genre=None):
 
         self.model = model
         self.IMDb_df = IMDb_df
@@ -20,7 +18,7 @@ class LightFMRecSyc():
         if self.Genre is None:
             return self.IMDb_df['TITLE']
         else:
-            return self.IMDb_df.loc[self.IMDb_df[self.Genre] == 1]
+            return self.IMDb_df.loc[self.IMDb_df[self.Genre] == 1, 'TITLE']
 
     def recommend(self, user_id, k, movies_to_predict):
         """
@@ -35,14 +33,23 @@ class LightFMRecSyc():
                                             item_ids=movies_to_predict
                                             )
             dict_items = dict(zip(movies_to_predict, prediction))
-            items_s = list(dict(sorted(dict_items.items(), key=lambda item: item[1], reverse=True)).keys())[:k]
+
+            if self.Genre is None:
+
+                items_s = list(dict(sorted(dict_items.items(), key=lambda item: item[1], reverse=True)).keys())[:k]
+
+            else:
+
+                genre_films = moveis_fin.loc[moveis_fin[self.Genre] == 1, 'MOVIEID'].to_list()
+                set_films = set(dict_items.keys()) & set(genre_films)
+                dict_genre = {key: dict_items[key] for key in list(set_films)}
+                items_s = list(dict(sorted(dict_genre.items(), key=lambda item: item[1], reverse=True)).keys())[:k]
 
             predict = list()
 
             for movie in range(0, k):
-
                 predict.append(self.RecSycFilms.loc[self.RecSycFilms['item_id'].isin([items_s[movie]]),
-                                                    'TITLE'].item())
+                'TITLE'].item())
             return predict
 
         except:
@@ -56,7 +63,13 @@ with open("movies_to_predict", "rb") as fp:  # Unpickling
     movies_to_predict = pickle.load(fp)
 
 ClassRecSyc = pickle.load(open('model_pred.pkl', 'rb'))
+
+# без жанра
 lfm = LightFMRecSyc(model=ClassRecSyc, RecSycFilms=RecSycFilms,
                     IMDb_df=moveis_fin, Genre=None)
+lfm.recommend(user_id = [274724], k = 5, movies_to_predict = movies_to_predict)
 
+# с жанром
+lfm = LightFMRecSyc(model=ClassRecSyc, RecSycFilms=RecSycFilms,
+                    IMDb_df=moveis_fin, Genre='Drama')
 lfm.recommend(user_id = [274724], k = 5, movies_to_predict = movies_to_predict)
