@@ -1,19 +1,19 @@
 # RecSys_Films
-Репозиторий проекта рекомендательных систем по фильмам:
+Репозиторий проекта рекомендательных систем по фильмам:    
 - Ход работы над проектом указан в презентации RecSys - презентация.pdf (в корневой директории);
 - EDA - папка с EDA анализом;
 - recsyc_part1 - финальные модели + класс для tg-бота;
 - tg_bot - код для tg-бота.
 
-### План проекта (в процессе доработки1)
+### План проекта (может корректироваться):    
 [Ссылка на google-документ](https://docs.google.com/document/d/1ErzQ7lf4dIpijgG4vmwcGSvy3dYz9V8db09wqW16Frw/edit?usp=sharing)
 
 
-### Структура данных
+### Структура данных:    
 [Ссылка на google-таблицу](https://docs.google.com/spreadsheets/d/1feZpmxxlIWfJ4-VrLrBzTngBFMFNwXb2b1ocfvsFezI/edit?usp=sharing)
 
 
-### Датасеты
+### Датасеты:
 Используется датасет movielens https://files.grouplens.org/datasets/movielens/ml-latest-README.html    
 [Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1cOOnSeXrYxYDrmAySUNxFiFlOMzczJD2/view?usp=sharing)
 
