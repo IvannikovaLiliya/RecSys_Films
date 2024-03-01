@@ -14,11 +14,11 @@
 
 
 ### Датасеты
-Используется датасет movielens https://files.grouplens.org/datasets/movielens/ml-latest-README.html
+Используется датасет movielens https://files.grouplens.org/datasets/movielens/ml-latest-README.html    
 [Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1cOOnSeXrYxYDrmAySUNxFiFlOMzczJD2/view?usp=sharing)
 
-Дополнительно используется датасет imdb https://developer.imdb.com/non-commercial-datasets/
+Дополнительно используется датасет imdb https://developer.imdb.com/non-commercial-datasets/    
 [Ссылка на google-диск с датасетом](https://drive.google.com/file/d/1JSpzTZKUJVA3HwO7b1E80ld6dPwUoNB3/view?usp=sharing)
 
-Данные для модели, построенной на базе библиотеки LightFm
+Данные для модели, построенной на базе библиотеки LightFm    
 [Ссылка на google-диск с файлами по модели](https://drive.google.com/drive/folders/1hIhQTeSNQ3oCJTboDrya0sFCFuPmKKmq?usp=sharing)
