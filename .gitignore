@@ -2,3 +2,13 @@
 /shelf/
 /workspace.xml
 tg_bot/.env
+test1.csv
+test2.csv
+test3.csv
+lightfm_grad.png
+lightfm_k.png
+lightfm_loss.png
+lfm_model_fin_v2.pkl
+movies_full.csv
+knn_mapk.json
+knn_MAP@3.png
