@@ -3,8 +3,8 @@ services:
   bot:
     build: app
     container_name: tg_bot
-    environment:
-      - BOT_TOKEN=6809020745:AAFxAlu-QZR9WkGGwF1rZl1fiZH8yREVvpI
+    env_file:
+      - .env-non-dev
     networks:
       app-network:
         aliases:
