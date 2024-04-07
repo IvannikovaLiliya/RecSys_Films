@@ -9,7 +9,7 @@ from aiogram.methods import TelegramMethod
 from aiogram.methods.base import Response
 from aiogram.methods.base import TelegramType
 
-from aiogram_tests.mocked_bot import MockedBot
+from tests.aiogram_tests.mocked_bot import MockedBot
 
 
 class RequestHandler:

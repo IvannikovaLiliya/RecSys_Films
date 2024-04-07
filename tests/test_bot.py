@@ -9,9 +9,9 @@ from app.bot_handlers.handler_auth import (first_auth, first_auth_err, first_aut
 from app.bot_handlers.handler_main_menu import (show_summary, list_rec_film,
                                                 choice_genre, list_rec_film_genre,
                                                 predict_film)
-from aiogram_tests import MockedBot
-from aiogram_tests.handler import MessageHandler
-from aiogram_tests.types.dataset import MESSAGE
+from tests.aiogram_tests import MockedBot
+from tests.aiogram_tests import MessageHandler
+from tests.aiogram_tests.types import MESSAGE
 
 
 @pytest.mark.asyncio
