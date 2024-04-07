@@ -10,6 +10,11 @@
 - необходимо клонировать репозиторий на локальную машину;
 - запросить токен для запуска бота (тг - https://t.me/Aragosu)
 - находясь в корневой директории прописать в консоли ```docker compose up --build```
+
+# Ссылка на докер образы:
+- [апи](https://hub.docker.com/r/aragos/recsys_api_pvv)     
+- [бот](https://hub.docker.com/r/aragos/recsys_bot_pvv)
+
     
 ### План проекта (может корректироваться):    
 [Ссылка на google-документ](https://docs.google.com/document/d/1ErzQ7lf4dIpijgG4vmwcGSvy3dYz9V8db09wqW16Frw/edit?usp=sharing)
