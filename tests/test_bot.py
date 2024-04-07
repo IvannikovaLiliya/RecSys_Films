@@ -10,8 +10,8 @@ from app.bot_handlers.handler_main_menu import (show_summary, list_rec_film,
                                                 choice_genre, list_rec_film_genre,
                                                 predict_film)
 from tests.aiogram_tests import MockedBot
-from tests.aiogram_tests import MessageHandler
-from tests.aiogram_tests.types import MESSAGE
+from tests.aiogram_tests.handler.handler import MessageHandler
+from tests.aiogram_tests.types.dataset import MESSAGE
 
 
 @pytest.mark.asyncio

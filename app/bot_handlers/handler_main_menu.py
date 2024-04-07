@@ -14,7 +14,7 @@ from bot_handlers.schemas import Form, rec_films_genre, genre_dict
 
 menu_router = Router()
 
-#url_domain = '127.0.0.1:8000'
+#url_domain = '127.0.0.1:8000' # для тестов
 url_domain = 'api:8000'
 
 # 4. Основное меню, открывается только после авторизации
