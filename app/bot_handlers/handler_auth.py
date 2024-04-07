@@ -108,7 +108,7 @@ async def first_auth_yes(message: Message, state: FSMContext) -> None:
     await state.set_state(Form.auth_ok_status)
 
 
-# ??? ПРОМЕЖУТОЧНАЯ РУЧКА - если пользователь не авторизовался и хочет дергать основные функции
+# ПРОМЕЖУТОЧНАЯ РУЧКА - если пользователь не авторизовался и хочет дергать основные функции
 @auth_router.message(~StateFilter(Form.auth_ok_status),
                      F.text.casefold().in_(["покажи рекомендации",
                                             "покажи рекомендации по жанру",

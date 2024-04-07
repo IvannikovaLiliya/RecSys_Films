@@ -21,7 +21,7 @@ genre_dict = {
     "Криминал": "crime",
     "Документальный": "documentary",
     "Драма": "drama",
-    "Фэнтези": "dantasy",
+    "Фэнтези": "fantasy",
     "Нуар": "film-Noir",
     "Ужасы": "horror",
     "Мюзикл": "musical",

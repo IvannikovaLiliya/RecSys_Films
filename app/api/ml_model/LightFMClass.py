@@ -42,8 +42,7 @@ class LightFMRecSyc():
             dict_items = dict(zip(movies_to_predict, prediction))
 
             if self.Genre is None:
-                items_s = list(dict(sorted(dict_items.items(), key=lambda item: item[1], reverse=True)).keys())#[:k]
-#                items_s = dict(sorted(dict_items.items(), key=lambda item: item[1], reverse=True))
+                items_s = list(dict(sorted(dict_items.items(), key=lambda item: item[1], reverse=True)).keys())[:k]
             else:
                 genre_films = moveis_fin.loc[moveis_fin[self.Genre] == 1, 'MOVIEID'].to_list()
                 set_films = set(dict_items.keys()) & set(genre_films)

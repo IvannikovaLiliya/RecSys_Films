@@ -1,18 +1,3 @@
-# pip install aiogram
-# python.exe -m pip install --upgrade pip
-# pip install python-dotenv
-
-# pip install aiogram==3.0.0b7
-# pip install pytest==7.4.4
-# pip install pytest-asyncio==0.23.4
-# aiogram_tests скачать папку и закинуть в директорию
-# pip install coverage
-# coverage run -m pytest test_bot.py
-# coverage report -m
-# coverage html
-# coverage erase
-
-
 import asyncio
 import logging
 import os
