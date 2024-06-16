@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  bot:
+    build: app
+    container_name: tg_bot
+    env_file:
+      - .env-non-dev
+    networks:
+      app-network:
+        aliases:
+          - bot
+
+  api:
+    build: app/api
+    container_name: fastapi_app1
+    ports:
+      - 9999:8000
+    networks:
+      app-network:
+        aliases:
+          - api
+
+networks:
+  app-network:
+    driver: bridge
+    attachable: true
