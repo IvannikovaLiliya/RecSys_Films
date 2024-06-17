@@ -1,6 +1,6 @@
 # RecSys_Films
 Репозиторий проекта рекомендательных систем по фильмам:    
-- Краткое ревью в презентации [RecSys.pdf](https://github.com/IvannikovaLiliya/RecSys_Films/blob/master/RecSys.pdf);
+- Краткое ревью в презентации [RecSys - презентация.pdf]([https://github.com/IvannikovaLiliya/RecSys_Films/blob/master/RecSys.pdf](https://github.com/IvannikovaLiliya/RecSys_Films/blob/master/RecSys%20-%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F.pdf));
 - [app](app) - приложение fastapi + тг-бот;
 - [EDA](EDA) - первичный анализ данных;
 - [recsyc_part1](recsyc_part1) - финальные модели;
